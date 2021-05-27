@@ -3,77 +3,7 @@
 Latest studies released by the government has found that the highest proportion of people using NHS funded mental health, learning difficulties and autism services was those of a BAME background.  The lowest figures of 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ethnicity and Mental Health</title>
-<script src="https://d3js.org/d3.v6.min.js">
-     </script>
-	<style type="text/css">
 
-
-
-     	</style>
-</head>
-
-<body>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawStuff);
-
-      function drawStuff() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Ethnicity', 'Number per 100,000'],
-          ["Chinese", 1544],
-          ["Mixed White/Asian",	2373],
-          ["Indian", 2520],
-          ["White Irish", 3126],
-          ["Black African", 3178],
-          ["Asian", 3295],
-          ["Mixed White/Black Caribbean", 3581],
-          ["White", 3612],
-          ["All", 3617],
-          ["White British", 3634],
-          ["Mixed White/Black African", 3795],
-          ["Mixed", 3869],
-          ["Pakistani",	3924],
-          ["Asian other", 4056],
-          ["Bangladeshi", 4550],
-          ["Black Caribbean", 4796],
-          ["Black", 4799],
-          ["White other", 5037],
-          ["Mixed other", 6022],
-          ["Chinese and other", 6771],
-          ["Black other", 11379],
-          ["Any other", 16118]
-          
-        ]);
-
-        var options = {
-          width: 1000,
-          legend: { position: 'none' },
-          chart: {
-            title: ('Number of people using NHS-funded secondary mental health learning disabilities and autism services, by ethnicity' ),
-            subtitle: ('Number of people per 100,000') },
-          axes: {
-            x: {
-              0: { side: 'bottom', label: 'Ethnicity'} // Top x-axis.
-            }
-          },
-          bar: { groupWidth: "90%" }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-        // Convert the Classic options to Material options.
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      };
-    </script>
-
- <div id="top_x_div" style="width: 800px; height: 600px;"></div>
-
-</body>
-</html>
 
 
    
